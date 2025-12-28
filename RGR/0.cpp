@@ -7,15 +7,15 @@ int main() {
     const int studentsAmount = 29, needableTasksAmountPerChapter = 3, chaptersAmount = sizeof(tasksAmountPerChapter) / sizeof(tasksAmountPerChapter[0]);
     int myVariant = 8;
 
-    // //Проверка ввода.
-    // cout << "Enter your variant (" << studentsAmount << " students): ";
-    // if (cin >> myVariant && myVariant <= studentsAmount) {
-    //     cout << endl << "Your task indexes: " << endl;
-    // } else {
-    //     cout << endl << "Error: Enter correct number!" << endl;
-    //     cin.clear();
-    //     return 0;
-    // }
+    //Проверка ввода.
+    cout << "Enter your variant (" << studentsAmount << " students): ";
+    if (cin >> myVariant && myVariant <= studentsAmount) {
+        cout << endl << "Your task indexes: " << endl;
+    } else {
+        cout << endl << "Error: Enter correct number!" << endl;
+        cin.clear();
+        return 0;
+    }
     
     for (int j = 0; j < chaptersAmount; j++) {
         cout << "| ";
