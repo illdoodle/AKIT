@@ -6,7 +6,8 @@ void coutArray (int arr[], int size);
 
 int main() {
     int arr[] = {1, 2, 5, 3, 3, 2, 8, 8, 8, 10};
-    int size = sizeof(arr) / sizeof(arr[0]), count = 1;
+    const int size = sizeof(arr) / sizeof(arr[0]);
+    int count = 1;
     
     coutArray(arr, size);
     

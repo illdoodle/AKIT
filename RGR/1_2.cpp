@@ -6,7 +6,7 @@ void coutArray (int arr[], int size);
 
 int main() {
     int arr[] = {1, 1, 5, 3, 3, 2, 16, 8, 8, 10};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    const int size = sizeof(arr) / sizeof(arr[0]);
     int maxNumber = arr[0], minNumber = arr[0];
     int maxIndex = 0, minIndex = 0, temp;
 

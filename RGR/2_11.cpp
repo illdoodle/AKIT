@@ -6,10 +6,9 @@ int main() {
     const int m = 5, n = 5;
     int matrix[m][n] = {};
 
-
     for (int j = 0; j < m; j++) {
         matrix[j][0] = 1;
-        matrix[j][m - 1] = 1;
+        matrix[j][n - 1] = 1;
         for (int i = 1; i < n - 1; i++) {
             if(j == 0 || j == m - 1) {
                 matrix[j][i] = 1;

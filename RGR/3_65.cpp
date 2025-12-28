@@ -1,10 +1,8 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 //3-65. Вывести слова строки, начинающиеся и заканчивающиеся одной и той же буквой.
 
 int main() {
-    srand(time(0));
     char str[] = "tenet apple tree noon wise task people wow";
     const int size = sizeof(str) / sizeof(str[0]);
     int wordStart = 0;

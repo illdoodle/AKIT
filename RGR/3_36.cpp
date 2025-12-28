@@ -6,7 +6,7 @@ using namespace std;
 bool isRealNumber(char s[], int size);
 
 int main() {
-    char s[] = "-52.3";
+    char s[] = "-5.23";
     const int size = sizeof(s) / sizeof(s[0]);
     cout << isRealNumber(s, size) << endl;
 
@@ -21,7 +21,7 @@ bool isRealNumber (char s[], int size) {
 
     if (s[i] == '+' || s[i] == '-') {
         i++;
-        if (s[i] == '\0') return false;
+        // if (s[i] == '\0') return false;
     }
     
     while (s[i] != '\0') {
