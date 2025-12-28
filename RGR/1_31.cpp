@@ -9,18 +9,13 @@ void coutArray (int arr[], int size);
 int main() {
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     const int size = sizeof(arr) / sizeof(arr[0]);
-    int cachedIndexes[size] = {};
     int randomIndex, temp;
 
     srand(time(0));
     coutArray(arr, size);
     
     for (int i = 0; i < size - 1; i++) {
-        randomIndex = i + rand() % (size - i);
-        while (i == randomIndex) {
-            randomIndex = i + rand() % (size - i);
-        }
-        
+        randomIndex = (i + 1) + rand() % (size - i - 1);
         temp = arr[i];
         arr[i] = arr[randomIndex];
         arr[randomIndex] = temp;
