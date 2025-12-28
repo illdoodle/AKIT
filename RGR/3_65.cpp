@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     srand(time(0));
     char str[] = "tenet apple tree noon wise task people wow";
-    int size = sizeof(str) / sizeof(str[0]);
+    const int size = sizeof(str) / sizeof(str[0]);
     int wordStart = 0;
 
     for (int i = wordStart; i < size; i++) {

@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     char s[] = "ysaddgsd";
-    int size  = sizeof(s) / sizeof(s[0]);
+    const int size  = sizeof(s) / sizeof(s[0]);
     int xIndex = -1, wIndex = -1;
     
     for (int i = 0; i < size; i++) {
@@ -19,7 +19,7 @@ int main() {
     } else if (wIndex > xIndex) {
         cout << "w first = " << wIndex << " > " << xIndex << endl;;
     } else {
-        cout << "no x or w" << endl;
+        cout << "no x and w" << endl;
     }
 
     return 0;

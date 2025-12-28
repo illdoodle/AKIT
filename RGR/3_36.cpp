@@ -7,7 +7,7 @@ bool isRealNumber(char s[], int size);
 
 int main() {
     char s[] = "-52.3";
-    int size = sizeof(s) / sizeof(s[0]);
+    const int size = sizeof(s) / sizeof(s[0]);
     cout << isRealNumber(s, size) << endl;
 
     return 0;
