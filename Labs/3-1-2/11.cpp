@@ -7,13 +7,11 @@ using namespace std;
 int main() {
     const int floorsAmount = 12, roomsOnFloor = 3; 
     const int roomsOnEntrance = floorsAmount * roomsOnFloor;
-    int n = 1, floor, entrance;
-    for(int i = 0; i < 8; i++) {
-        for (int j = 0; j < 2; j++, n++) {
-            cout << n << "  " << floor << ":" << entrance; 
-            cout << '\t' << '\t';
-        }
-        cout << endl;
-    } 
+    int n, floor, entrance;
+    cout << "Enter apartament nubmer: ";
+    cin >> n;
+    entrance = (n + roomsOnEntrance - 1) / roomsOnEntrance;
+    floor = ((n - (entrance - 1) * roomsOnEntrance) + (roomsOnFloor - 1)) / roomsOnFloor;
+    cout << floor << "/" << entrance << endl;
     return 0;
 }
