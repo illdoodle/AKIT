@@ -1,15 +1,12 @@
 #include <iostream>
 using namespace std;
-//3. Создайте 3 переменные с разными типами данных (int, char и double) и при помощи потока ввода (cin) введите в них значения. 
-//После ввода, отобразите их на экране.
+//Дано четырехзначное число 5483, вывести на экран в обратном порядке цифры,
+//из которых это число состоит. 
+//То есть мы должны увидеть на экране 3845. 
+//Подсказка: чтобы взять из числа отдельные цифры, надо применять деление по модулю на 10.
     
 int main() {
-    int variableInt;
-    double variableDouble;
-    char variableChar;
-    cin >> variableInt >> variableDouble >> variableChar;
-    cout << variableInt << endl;
-    cout << variableDouble << endl;
-    cout << variableChar << endl;
+    int n = 5483;
+    cout << n % 10 << n / 10 % 10 << n / 100 % 10 << n / 1000 << endl;
     return 0;
 }
